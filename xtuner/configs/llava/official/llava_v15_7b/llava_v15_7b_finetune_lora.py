@@ -26,9 +26,9 @@ visual_encoder_name_or_path = 'openai/clip-vit-large-patch14-336'
 pretrained_pth = './work_dirs/llava_v15_7b_pretrain/iter_2181.pth'
 
 # Data
-data_root = './data/llava_data/'
-data_path = data_root + 'LLaVA-Instruct-150K/llava_v1_5_mix665k.json'
-image_folder = data_root + 'llava_images'
+data_root = './finetune_merged_selective_resized'
+data_path = data_root + 'finetune.json'
+image_folder = data_root + 'content'
 prompt_template = PROMPT_TEMPLATE.vicuna
 max_length = int(2048 - (336 / 14)**2)
 
